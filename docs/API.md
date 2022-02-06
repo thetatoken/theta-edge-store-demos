@@ -226,7 +226,7 @@ curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","metho
 
 ## REST APIs
 
-In addition to the RPC server, the EdgeStore also runs an HTTP server to for file serving. The HTTP server runs at port 8080 by default. It can be changes through the `http.port` config in the `config.yaml` file.
+In addition to the RPC server, the EdgeStore also runs an HTTP server to for file serving. The HTTP server runs at port 8080 by default. It can be changes through the `rest.port` config in the `config.yaml` file.
 
 ### The File API
 
