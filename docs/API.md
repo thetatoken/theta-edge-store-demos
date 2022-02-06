@@ -4,15 +4,15 @@ The EdgeStore node provides two set of APIs, namely, the RPC APIs and the REST A
 
 ### Table of Contents
 1. [RPC APIs](#rpc-apis)
-    1. [GetVersion](#getversion)
-    2. [GetStatus](#getstatus)
-    3. [GetPeers](#getpeers)
-    4. [PutData](#putdata)
-    5. [GetData](#getdata)
-    6. [PutFile](#putfile)
-    7. [GetFile](#getfile)
+    1. [GetVersion](#getversion): get EdgeStore version
+    2. [GetStatus](#getstatus): get EdgeStore status
+    3. [GetPeers](#getpeers): get EdgeStore peers
+    4. [PutData](#putdata): upload text data string
+    5. [GetData](#getdata): retrieve text data string
+    6. [PutFile](#putfile): upload file/directory
+    7. [GetFile](#getfile): retrieve file/directory
 2. [REST APIs](#rest-apis)
-    1. [File](#the-file-api)
+    1. [File](#the-file-api): file serving
 
 ## RPC APIs
 
