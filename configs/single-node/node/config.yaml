@@ -20,5 +20,4 @@ rest:
   enabled: true
   address: 0.0.0.0
 log:
-  #levels: "*:info,guardian:debug"
-  levels: "*:debug"
+  levels: "*:info"
