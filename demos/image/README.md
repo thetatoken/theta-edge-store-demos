@@ -6,11 +6,11 @@ This simple example demonstrates how to upload/retrieve image files to/from a lo
 
 #### Launch a single-node EdgeStore private network
 
-If you haven't done so, please follow [this guide](../../docs/SETUP.md). to setup the EdgeStore environment, launch a single node network with the following the steps in [this guide](../docs/SETUP.md#launch-a-single-node-edgestore-private-network).
+If you haven't done so, please follow [this guide](../../docs/SETUP.md) to setup the EdgeStore environment, and launch a [single node network]((../../docs/SETUP.md#launch-a-single-node-edgestore-private-network)).
 
 #### Upload/Download an image file
 
-Use the following command to upload the `smiley_explorer.png` file:
+Use the following commands to upload the `smiley_explorer.png` file:
 
 ```shell
 cd ~/edge-store-playground
@@ -24,7 +24,7 @@ cd ~/edge-store-playground
 # }
 ```
 
-To retrieve the image file, open a browser window and go to the following URL. By default, the EdgeNode runs a REST server at port 8080 (can be changed to other ports through `rest.port` in the `config.yaml` file under the config folder):
+The EdgeNode provides a [REST API](../../docs/API.md#rest-apis) for the users to download the image files uploaded to the network with the keys. Simply open a browser window and go to the following URL. By default, the EdgeNode runs a REST server at port 8080 (can be changed to other ports through `rest.port` in the `config.yaml` file under the config folder):
 
 http://localhost:8080/api/v1/file?key=0xbc0383809da9fb98c5755e3fa4f19f4ebc7e34308ab321246e4bb54e548fad04&relpath=smiley_explorer.png
 

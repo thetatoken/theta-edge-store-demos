@@ -1,0 +1,24 @@
+# Theta EdgeStore multi-node privatenet configuration
+p2p:
+  port: 50002
+  seeds: 127.0.0.1:50001,127.0.0.1:50003
+  bootstrapSeeds: 127.0.0.1:16888
+  minNumPeers: 1
+  maxNumPeers: 96
+  maxInitiallyAttemptedPeers: 64
+  maxConnections: 2048
+  connectionFIFO: true
+  #natMapping: true
+storage:
+  shardPriorityThreshold: 500000
+rpc:
+  port: 19889
+  enabled: true
+  address: 127.0.0.1
+rest:
+  port: 8081
+  enabled: true
+  address: 0.0.0.0
+log:
+  #levels: "*:info,guardian:debug"
+  levels: "*:debug"

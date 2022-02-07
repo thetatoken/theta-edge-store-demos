@@ -8,7 +8,6 @@ Please follow the steps below to download the EdgeStore demos:
 
 ```shell
 mkdir -p ~/edge-store-playground/bin
-export EDGE_STORE_PLAYGROUND=~/edge-store-playground
 
 # download the demos
 cd ~/edge-store-playground
@@ -32,7 +31,7 @@ wget -O bin/edgestore https://theta-downloader.s3.amazonaws.com/edgestore/alpha-
 chmod +x bin/edgestore
 
 # For Windows
-wget -O bin/edgestore https://theta-downloader.s3.amazonaws.com/edgestore/alpha-preview/windows/edgestore
+wget -O bin/edgestore https://theta-downloader.s3.amazonaws.com/edgestore/alpha-preview/windows/edgestore.exe
 ```
 
 ### Launch a single-node EdgeStore private network
