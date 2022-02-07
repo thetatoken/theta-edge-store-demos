@@ -101,4 +101,4 @@ ls privatenet/multi-node/node3/storage/file_cache/0xdacc9a23035a458f21aa0cb51189
 # smiley_explorer.png theta_network.jpg
 ```
 
-For more examples, please check out the [demos](../demos) we prepared. In addtion to the CLI commands, you can also interact with a EdgeStore node through its RPC and REST APIs. For more details, please check out the [API References](API.md).
+For more examples, please check out the [demos](../demos) we prepared. In addtion to the CLI commands, you can also interact with a EdgeStore node through its RPC and REST APIs. For more details, please check out the [API References](API.md#edgestore-api-reference).

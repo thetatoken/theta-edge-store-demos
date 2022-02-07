@@ -1,6 +1,6 @@
 # EdgeStore API Reference
 
-The EdgeStore node provides two set of APIs, namely, the RPC APIs and the REST APIs. The RPC APIs are mostly for interacting with the EdgeNode, e.g. query node state, upload/retrieve files. The REST APIs are primarily for content serving, e.g. serving a PNG image file or a PDF file. Below we provide the reference for these APIs.
+The EdgeStore node provides two set of APIs, namely, the RPC APIs and the REST APIs. The [RPC APIs](#rpc-apis) are mostly for interacting with the EdgeNode, e.g. query node state, upload/retrieve files. The [REST APIs](#rest-apis) are primarily for content serving, e.g. serving a PNG image file or a PDF file. Below we provide the reference for these APIs.
 
 ### Table of Contents
 1. [RPC APIs](#rpc-apis)

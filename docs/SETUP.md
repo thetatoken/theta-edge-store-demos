@@ -77,4 +77,4 @@ cd ~/edge-store-playground
 ./bin/edgestore start --config=./privatenet/multi-node/node3 --password=qwertyuiop
 ```
 
-Next, check out the [CLI commands](./CLI.md) with which you can interact with the EdgeStore network.
+Next, check out the [CLI commands](./CLI.md#edgestore-command-line-reference) with which you can interact with the EdgeStore network.
