@@ -152,7 +152,7 @@ This API allows a user to upload a file or a directory the EdgeStore network. Th
 
 ```shell
 # Request: upload a file
-curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"edgestore.PutFile","params":[{"path": "image/data/smiley_explorer.png"}],"id":1}' http://localhost:19888/rpc
+curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"edgestore.PutFile","params":[{"path": "theta-edge-store-demos/demos/image/data/smiley_explorer.png"}],"id":1}' http://localhost:19888/rpc
 
 # Result
 {
@@ -170,7 +170,7 @@ curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","metho
 
 ```shell
 # Request: upload a directory of files. The directory can have multiple levels of sub-directories. It will be processed recursively.
-curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"edgestore.PutFile","params":[{"path": "image/data"}],"id":1}' http://localhost:19888/rpc
+curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"edgestore.PutFile","params":[{"path": "theta-edge-store-demos/demos/image/data"}],"id":1}' http://localhost:19888/rpc
 
 # Result
 {
