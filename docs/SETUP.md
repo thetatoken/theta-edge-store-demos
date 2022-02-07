@@ -1,6 +1,6 @@
 # EdgeStore Setup
 
- This guide provides the instructions to setup the environment for Theta EdgeStore and the steps to launch private EdgeStore networkds. Note that the binaries we currently provide is just an Alpha preview version with NO guarantees. It should **NOT** be used in a production environment. However, we encougage developers to play with it and provide feedback.
+ This guide provides the instructions to setup the environment for Theta EdgeStore and the steps to launch private EdgeStore networkds. Note that the binaries we currently provide is just an Alpha preview version with **NO** guarantees. We expect frequent future updates, some of which might **NOT** be backward compatible. Hence, it should **NOT** be used in a production environment. However, we encougage developers to play with it and provide feedback.
 
 ### Dowload the EdgeStore demos
 
@@ -69,7 +69,6 @@ cd ~/edge-store-playground
 ./bin/edgestore start --config=./privatenet/multi-node/node1 --password=qwertyuiop
 
 # Start the 2nd edgestore node in terminal #2. Its RPC runs at port 19889
-export EDGE_STORE_HOME=$GOPATH/src/github.com/thetatoken/edgestore
 cd ~/edge-store-playground
 ./bin/edgestore start --config=./privatenet/multi-node/node2 --password=qwertyuiop
 
@@ -77,3 +76,5 @@ cd ~/edge-store-playground
 cd ~/edge-store-playground
 ./bin/edgestore start --config=./privatenet/multi-node/node3 --password=qwertyuiop
 ```
+
+Next, check out the [CLI commands](./CLI.md) with which you can interact with the EdgeStore network.
