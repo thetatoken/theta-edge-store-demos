@@ -4,11 +4,13 @@ This simple example demonstrates how to upload/retrieve an HLS video stream to/f
 
 ## Upload and Retrieve Video Files
 
-#### Launch a multi-node EdgeStore private network
+This sections shows you how to setup a local multi-node EdgeStore network, and then upload a HLS VoD stream to the network through the first node, and playback the stream from the third node.
+
+### Launch a multi-node EdgeStore private network
 
 If you haven't done so, please follow [this guide](../../docs/SETUP.md#edgestore-setup) to setup the EdgeStore environment, and launch a [multi-node network]((../../docs/SETUP.md#launch-a-multi-node-edgestore-private-network)) on your local computer.
 
-#### Upload and Playback an HLS video stream
+### Upload and Playback an HLS video stream
 
 Use the following commands to upload the `demo_stream` HLS video stream, which composed of the `main.m3u8` playlist and a few `.ts` files under the `720` folder. Note that as we specified the 19888 RPC port, the video stream will be uploaded to the network through the first node.
 
@@ -24,17 +26,15 @@ EDGESTORERPCENDPOINT=http://127.0.0.1:19888/rpc ./bin/edgestore file put --path=
 # }
 ```
 
-Now, set up and start the HLS server.
+Now, start the HLS server. Note that the REST server of the 3rd node is running at port 8082, and we thus pass in 8082. This way the HLS server will be able to call the RPC api of the third node to download the HLS video stream from the EdgeStore network.
 
 ```shell
-cd ~/edge-store-playground/theta-edge-store-demos/demos/hls
-npm install
-
-# start the HLS server. Note that the REST server of the 3rd node is running at port 8082, and we thus pass in 8082
 node serv.js ../../../privatenet/multi-node/node3/storage/file_cache 0xabf21ab7cd613e7b5f1d964234004f459ad06d4a0448e229e21599afe16a914e demo_stream 8082
 ```
 
-To playback the HLS stream, open a browser and navigate to http://127.0.0.1:7001/stream 
+To playback the HLS stream, first open the following HLS playback tool in a browser. Next, enter this URL `http://127.0.0.1:7001/main.m3u8` in the input box, and press the "Play" button.
+
+https://www.hlsplayer.net/
 
 ## Multi-Node Network over the Internet
 
