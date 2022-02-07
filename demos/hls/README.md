@@ -12,6 +12,8 @@ If you haven't done so, please follow [this guide](../../docs/SETUP.md#edgestore
 
 ### Upload and Playback an HLS video stream
 
+#### Upload the HLS VoD stream
+
 Use the following commands to upload the `demo_stream` HLS video stream, which composed of the `main.m3u8` playlist and a few `.ts` files under the `720` folder. Note that as we specified the 19888 RPC port, the video stream will be uploaded to the network through the first node.
 
 ```shell
@@ -26,15 +28,20 @@ EDGESTORERPCENDPOINT=http://127.0.0.1:19888/rpc ./bin/edgestore file put --path=
 # }
 ```
 
+#### Start the HLS server
+
 Now, start the HLS server. Note that the REST server of the 3rd node is running at port 8082, and we thus pass in 8082. This way the HLS server will be able to call the RPC api of the third node to download the HLS video stream from the EdgeStore network.
 
 ```shell
 node serv.js ../../../privatenet/multi-node/node3/storage/file_cache 0xabf21ab7cd613e7b5f1d964234004f459ad06d4a0448e229e21599afe16a914e demo_stream 8082
 ```
 
-To playback the HLS stream, first open the following HLS playback tool in a browser. Next, enter this URL `http://127.0.0.1:7001/main.m3u8` in the input box, and press the "Play" button.
+#### Playback the HLS stream
+To playback the HLS stream, first open the following HLS playback tool in a browser:
 
 https://www.hlsplayer.net/
+
+Next, enter this URL `http://127.0.0.1:7001/main.m3u8` in the input box, and press the "Play" button.
 
 ## Multi-Node Network over the Internet
 
