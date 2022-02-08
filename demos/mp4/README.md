@@ -27,3 +27,7 @@ cd ~/edge-store-playground
 The EdgeNode provides a [REST API](../../docs/API.md#rest-apis) for the users to playback videos uploaded to the network with the keys and the relative path of the video file. By default, the REST server runs at port 8080 (can be changed to other ports through `rest.port` in the `config.yaml` file under the config folder). Simply open a browser window and go to the following URL:
 
 http://localhost:8080/api/v1/file?key=0x3852a9efead985ff970b2f289ef070b0eafbe5371b7433611fe1c6c2c4d009cd&relpath=720.mp4
+
+You should see the mp4 video playback in your browser similar to the following:
+
+![MP4 Storage and Playback Demo](../../docs/showcase/02-mp4-storage-and-playback.png)

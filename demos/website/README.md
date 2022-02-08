@@ -42,6 +42,10 @@ node serv.js ../../../privatenet/multi-node/node3/storage/file_cache 0x6f53fee95
 
 To visit the site, open a browser and navigate to http://127.0.0.1:7001/index.html 
 
+You should see Web App in your browser, similar to the following:
+
+![Web App Hosting Demo](../../docs/showcase/04-web-app-hosting.png)
+
 ## Multi-Node Network over the Internet
 
 To setup a multi-node network over the Internet, simply modify the `p2p.seeds` config in the `config.yaml` file for the nodes. For example, you can deploy three nodes on three different cloud instances. The nodes do not need to be on the same network. For example, you can run one node in GCP, another in AWS, and the third on your local computer. However, you would need to configure the firewall rules properly to allow inbound/outbound traffics on the `p2p.port`, so that the nodes can communicate with each other. Once the firewall rules are set up, you can run the EdgeStore nodes with commands similar to the above. They should be able to connect to each other and forms a unified permanent storage network. In our implementation, each EdgeStore node also caches the popular contents locally. Therefore, the network also acts as a decentralized content delivery network (dCDN) for any type of file.
