@@ -42,7 +42,7 @@ node serv.js ../../../privatenet/multi-node/node3/storage/file_cache 0x6f53fee95
 
 To visit the site, open a browser and navigate to http://127.0.0.1:7001/index.html 
 
-You should see Web App in your browser, similar to the following:
+You should see Web App in your browser similar to the following:
 
 ![Web App Hosting Demo](../../docs/showcase/04-web-app-hosting.png)
 

@@ -49,6 +49,6 @@ Now, we can retrieve the two images under the `data` folder thorugh the followin
 
 - theta_network.jpg: http://localhost:8080/api/v1/file?key=0xdacc9a23035a458f21aa0cb51189d715cb5c43d7ff4c0227cca5c25eeef3d5b4&relpath=data/theta_network.jpg
 
-You should see something like this in your browser:
+You should see something like this in your browser :)
 
 ![Image Hosting Demo](../../docs/showcase/01-image-hosting.png)
