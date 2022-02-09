@@ -21,7 +21,7 @@ Please follow the steps below to download the proper EdgeStore binary for your O
 ```shell
 cd ~/edge-store-playground
 
-# For macos. Note that we need to grant permission to the binary.
+# For macOS. Note that we need to grant permission to the binary.
 wget -O bin/edgestore https://theta-downloader.s3.amazonaws.com/edgestore/alpha-preview/macos/edgestore
 chmod +x bin/edgestore
 sudo spctl --add ./bin/edgestore
@@ -31,7 +31,7 @@ wget -O bin/edgestore https://theta-downloader.s3.amazonaws.com/edgestore/alpha-
 chmod +x bin/edgestore
 
 # For Windows
-wget -O bin/edgestore https://theta-downloader.s3.amazonaws.com/edgestore/alpha-preview/windows/edgestore.exe
+wget -O bin/edgestore.exe https://theta-downloader.s3.amazonaws.com/edgestore/alpha-preview/windows/edgestore.exe
 ```
 
 ### Launch a single-node EdgeStore private network
