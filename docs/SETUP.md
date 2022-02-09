@@ -1,6 +1,6 @@
 # EdgeStore Setup
 
- This guide provides the instructions to setup the environment for Theta EdgeStore and the steps to launch private EdgeStore networkds. Note that the binaries we currently provide is just an Alpha preview version with **NO** guarantees. We expect frequent future updates, some of which might **NOT** be backward compatible. Hence, it should **NOT** be used in a production environment. However, we encougage developers to play with it and provide feedback.
+This guide provides the instructions to setup Theta EdgeStore and the steps to launch private EdgeStore networks. Note that the binaries we currently provide is just an Alpha preview version with **NO** guarantees. We expect frequent future updates, some of which might **NOT** be backward compatible. Hence, it should **NOT** be used in a production environment. However, we encougage developers to play with it and provide feedback.
 
 ### Dowload the EdgeStore demos
 
@@ -39,9 +39,10 @@ wget -O bin/edgestore.exe https://theta-downloader.s3.amazonaws.com/edgestore/al
 Please follow the steps below to launch a single-node EdgeNode private network.
 
 ```shell
-# Copy over the configs. This should copy the `config.yaml` file we prepared to the config folder `privatenet/single-node/node`:
 cd ~/edge-store-playground
 mkdir -p privatenet/single-node
+
+# Copy over the configs. This should copy the `config.yaml` file we prepared to the config folder `privatenet/single-node/node`:
 cp -r ./theta-edge-store-demos/configs/single-node/node privatenet/single-node
 
 # Start the edgestore. Its RPC runs at port 19888
@@ -57,7 +58,6 @@ cd ~/edge-store-playground
 Before launching the multi-node EdgeNode private network, please make sure to stop the single-node EdgeNode private network with `Ctrl+C` to avoid HTTP/P2P port conflicts. Next, following the commands below to launch the multi-node EdgeNode private network.
 
 ```shell
-# Copy over the configs
 cd ~/edge-store-playground
 mkdir -p privatenet/multi-node
 
