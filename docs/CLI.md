@@ -1,6 +1,6 @@
 # EdgeStore Command Line Reference
 
-You can interact with the EdgeStore node using the **Query Commands** and **Data/File Commands**. Before trying the CLI commands below, please follow [this guide](../../docs/SETUP.md#edgestore-setup) to launch a local private EdgeStore network.
+You can interact with the EdgeStore node using the **Query Commands** and **Data/File Commands**. Before trying the CLI commands below, please follow [this guide](./SETUP.md#edgestore-setup) to launch a local private EdgeStore network.
 
 ## Query Commands
 
