@@ -12,7 +12,7 @@ This sections shows you how to setup a local multi-node EdgeStore network, and t
 
 ### Launch a multi-node EdgeStore private network
 
-If you haven't done so, please follow [this guide](../../docs/SETUP.md#edgestore-setup) to setup the EdgeStore environment, and launch a [multi-node network]((../../docs/SETUP.md#launch-a-multi-node-edgestore-private-network)) on your local computer.
+If you haven't done so, please follow [this guide](../../docs/SETUP.md#edgestore-setup) to setup the EdgeStore environment, and launch a [multi-node network]((../..http://docs/SETUP.md#launch-a-multi-node-edgestore-private-network) on your local computer.
 
 ### Upload the Web App
 
